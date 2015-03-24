@@ -1,0 +1,16 @@
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\bin\x86\Debug\DotoPing2.exe.config
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\bin\x86\Debug\DotoPing2.exe
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\bin\x86\Debug\DotoPing2.pdb
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\MainWindow.baml
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\MainWindow.g.cs
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\App.g.cs
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2_MarkupCompile.cache
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2.g.resources
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2.Properties.Resources.resources
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2.csproj.GenerateResource.Cache
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2.exe
+d:\datadocuments\my documents\visual studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2.pdb
+D:\DataDocuments\My Documents\Visual Studio 2013\Projects\DotoPing2 - PreTargetChange\DotoPing2\bin\x86\Debug\DotoPing2.exe.config
+D:\DataDocuments\My Documents\Visual Studio 2013\Projects\DotoPing2 - PreTargetChange\DotoPing2\obj\x86\Debug\DotoPing2.exe
+D:\DataDocuments\My Documents\Visual Studio 2013\Projects\DotoPing2 - PreTargetChange\DotoPing2\obj\x86\Debug\DotoPing2.pdb
+D:\DataDocuments\My Documents\Visual Studio 2013\Projects\DotoPing2\DotoPing2\obj\x86\Debug\DotoPing2.csprojResolveAssemblyReference.cache

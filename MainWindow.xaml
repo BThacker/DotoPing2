@@ -1,0 +1,87 @@
+﻿<Window x:Class="DotoPing2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="DOTO Ping" Height="456" Width="265" ResizeMode="NoResize" WindowStyle="None">
+    <Window.TaskbarItemInfo>
+        <TaskbarItemInfo/>
+    </Window.TaskbarItemInfo>
+    <Grid Background="#FFAAAAAA" Height="456" VerticalAlignment="Top">
+        <TextBlock HorizontalAlignment="Left" Margin="3,58,0,0" TextWrapping="Wrap" Text="SE Asia 1" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,79,0,0" TextWrapping="Wrap" Text="SE Asia 2" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,100,0,0" TextWrapping="Wrap" Text="India" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,121,0,0" TextWrapping="Wrap" Text="Austrailia" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,142,0,0" TextWrapping="Wrap" Text="Russia 1" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,163,0,0" TextWrapping="Wrap" Text="Russia 2" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,184,0,0" TextWrapping="Wrap" Text="Europe East" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,205,0,0" TextWrapping="Wrap" Text="Europe West 1" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,226,0,0" TextWrapping="Wrap" Text="Europe West 2" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,247,0,0" TextWrapping="Wrap" Text="South Africa 1" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,268,0,0" TextWrapping="Wrap" Text="South Africa 2" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,289,0,0" TextWrapping="Wrap" Text="South Africa 3" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,310,0,0" TextWrapping="Wrap" Text="US East" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,331,0,0" TextWrapping="Wrap" Text="US West" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,352,0,0" TextWrapping="Wrap" Text="South America 1" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,373,0,0" TextWrapping="Wrap" Text="South America 2" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="3,394,0,0" TextWrapping="Wrap" Text="South America 3" VerticalAlignment="Top" FontSize="16" FontWeight="Medium" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <TextBlock HorizontalAlignment="Left" Margin="134,35,0,0" TextWrapping="Wrap" Text="Current" VerticalAlignment="Top" FontWeight="Medium" TextOptions.TextFormattingMode="Display" ToolTip="This is your last ping to the server as recorded by the program."/>
+        <TextBlock HorizontalAlignment="Left" Margin="187,35,0,0" TextWrapping="Wrap" Text="Avg" VerticalAlignment="Top" RenderTransformOrigin="-1.07,0.627" FontWeight="Medium" TextOptions.TextFormattingMode="Display" ToolTip="Average is simply that, the average of the sum of all pings. "/>
+        <TextBlock HorizontalAlignment="Left" Margin="228,35,0,0" TextWrapping="Wrap" Text="Jitter" VerticalAlignment="Top" FontWeight="Medium" TextOptions.TextFormattingMode="Display" ToolTip="Jitter is the stDev value of the returned pings. Use this to gauge &quot;quality&quot; of the connection to the server. Lower numbers are better."/>
+        <Label x:Name="lblcur1" Content="0" HorizontalAlignment="Left" Margin="136,56,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur2" Content="0" HorizontalAlignment="Left" Margin="136,77,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur3" Content="0" HorizontalAlignment="Left" Margin="136,98,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur4" Content="0" HorizontalAlignment="Left" Margin="136,119,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur5" Content="0" HorizontalAlignment="Left" Margin="136,140,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur6" Content="0" HorizontalAlignment="Left" Margin="136,161,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur8" Content="0" HorizontalAlignment="Left" Margin="136,203,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur7" Content="0" HorizontalAlignment="Left" Margin="136,182,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur9" Content="0" HorizontalAlignment="Left" Margin="136,224,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur10" Content="0" HorizontalAlignment="Left" Margin="136,245,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur11" Content="0" HorizontalAlignment="Left" Margin="136,266,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur12" Content="0" HorizontalAlignment="Left" Margin="136,287,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur13" Content="0" HorizontalAlignment="Left" Margin="136,308,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur14" Content="0" HorizontalAlignment="Left" Margin="136,329,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur15" Content="0" HorizontalAlignment="Left" Margin="136,350,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur16" Content="0" HorizontalAlignment="Left" Margin="136,371,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblcur17" Content="0" HorizontalAlignment="Left" Margin="136,392,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg1" Content="0" HorizontalAlignment="Left" Margin="179,56,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg2" Content="0" HorizontalAlignment="Left" Margin="179,77,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg3" Content="0" HorizontalAlignment="Left" Margin="179,98,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg4" Content="0" HorizontalAlignment="Left" Margin="179,119,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg5" Content="0" HorizontalAlignment="Left" Margin="179,140,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg6" Content="0" HorizontalAlignment="Left" Margin="179,161,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg8" Content="0" HorizontalAlignment="Left" Margin="179,203,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg7" Content="0" HorizontalAlignment="Left" Margin="179,182,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg9" Content="0" HorizontalAlignment="Left" Margin="179,224,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg10" Content="0" HorizontalAlignment="Left" Margin="179,245,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg11" Content="0" HorizontalAlignment="Left" Margin="179,266,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg12" Content="0" HorizontalAlignment="Left" Margin="179,287,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg14" Content="0" HorizontalAlignment="Left" Margin="179,329,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg13" Content="0" HorizontalAlignment="Left" Margin="179,309,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg15" Content="0" HorizontalAlignment="Left" Margin="179,350,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg16" Content="0" HorizontalAlignment="Left" Margin="179,371,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lblavg17" Content="0" HorizontalAlignment="Left" Margin="179,392,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit1" Content="0" HorizontalAlignment="Left" Margin="222,56,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit2" Content="0" HorizontalAlignment="Left" Margin="222,77,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit3" Content="0" HorizontalAlignment="Left" Margin="222,98,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit4" Content="0" HorizontalAlignment="Left" Margin="222,119,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit5" Content="0" HorizontalAlignment="Left" Margin="222,140,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit6" Content="0" HorizontalAlignment="Left" Margin="222,161,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit8" Content="0" HorizontalAlignment="Left" Margin="222,203,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit7" Content="0" HorizontalAlignment="Left" Margin="222,182,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit9" Content="0" HorizontalAlignment="Left" Margin="222,224,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit10" Content="0" HorizontalAlignment="Left" Margin="222,245,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit11" Content="0" HorizontalAlignment="Left" Margin="222,266,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit12" Content="0" HorizontalAlignment="Left" Margin="222,287,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit13" Content="0" HorizontalAlignment="Left" Margin="222,308,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit14" Content="0" HorizontalAlignment="Left" Margin="222,329,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit15" Content="0" HorizontalAlignment="Left" Margin="222,350,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit16" Content="0" HorizontalAlignment="Left" Margin="222,371,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Label x:Name="lbljit17" Content="0" HorizontalAlignment="Left" Margin="222,392,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" Foreground="Black"/>
+        <Image HorizontalAlignment="Left" Height="37" Margin="8,10,0,0" VerticalAlignment="Top" Width="39" Source="Images/axe.png"/>
+        <Image HorizontalAlignment="Left" Height="27" Margin="236,0,-3,0" VerticalAlignment="Top" Width="32" Source="Images/close-icon.png" MouseDown="Image_MouseDown_1"/>
+        <TextBlock HorizontalAlignment="Left" Margin="62,0,0,0" TextWrapping="Wrap" Text="DOTO Ping" VerticalAlignment="Top" FontFamily="Verdana" TextOptions.TextFormattingMode="Display" FontSize="24" FontWeight="Bold"/>
+        <Label x:Name="lbltotal" Content="Total Pings:" HorizontalAlignment="Left" Margin="-2,415,0,0" VerticalAlignment="Top" TextOptions.TextFormattingMode="Display" RenderTransformOrigin="-3.653,-0.04"/>
+        <TextBlock HorizontalAlignment="Left" Margin="5,440,0,0" TextWrapping="Wrap" Text="Err = Server is not responding to ping requests." VerticalAlignment="Top" TextOptions.TextFormattingMode="Display"/>
+
+    </Grid>
+</Window>

@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Net.NetworkInformation;
 
@@ -9,7 +8,6 @@ namespace DotoPing2
 {
     class PingResults
     {
-
         public string PingAddress;
         public string ServerName;
 
@@ -52,7 +50,7 @@ namespace DotoPing2
                 }
                 else
                 {
-                    lastPing = 10;
+                    lastPing = 999;
                 }     
             }
 

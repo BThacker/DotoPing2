@@ -1,17 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 using System.Windows.Threading;
 
 namespace DotoPing2
@@ -24,7 +17,6 @@ namespace DotoPing2
         
         List<PingResults> servers = new List<PingResults>
             {
-                
                 new PingResults(){ ServerName = "seasia1", PingAddress = "sgp-1.valve.net"},
                 new PingResults(){ ServerName = "seasia2", PingAddress = "sgp-2.valve.net" },
                 new PingResults(){ ServerName = "india", PingAddress = "180.149.41.100" },
@@ -43,8 +35,8 @@ namespace DotoPing2
                 new PingResults(){ ServerName = "sam2", PingAddress = "209.197.29.1" },
                 new PingResults(){ ServerName = "sam3", PingAddress = "209.197.25.1" },
             };
-        
-        Label[] labelscur = new Label[18];
+
+        Label[] labelscur = new Label[18]; 
         Label[] labelsavg = new Label[18];
         Label[] labelsjit = new Label[18];
 
@@ -56,6 +48,7 @@ namespace DotoPing2
             timer.Interval = TimeSpan.FromSeconds(2);
             timer.Tick += timer_Tick;
             timer.Start();
+
             // Declare Variables for Labels based on above array
             labelscur[0] = null;
             labelscur[1] = this.lblcur1;
@@ -149,7 +142,7 @@ namespace DotoPing2
                 {
                     labelscur[i].Foreground = new SolidColorBrush(Colors.Red);
                 }
-                if (servers[i -1].LastPing == 10)
+                if (servers[i -1].LastPing == 999)
                 {
                     labelscur[i].Content = "Err";
                     labelscur[i].Foreground = new SolidColorBrush(Colors.DarkRed);
@@ -197,10 +190,7 @@ namespace DotoPing2
                 var aTask = Task.Factory.StartNew(() => servers[i - 1].DoPing());
             }            
         }
-        private void Image_MouseDown(object sender, MouseButtonEventArgs e)
-        {
-            Environment.Exit(0);
-        }
+       
         private void Image_MouseDown_1(object sender, MouseButtonEventArgs e)
         {
             Environment.Exit(0);
